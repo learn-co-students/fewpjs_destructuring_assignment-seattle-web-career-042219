@@ -1,6 +1,12 @@
 const farmAnimals = 'cow horse sheep pig chicken'
 
+const [moo, neigh, baa, oink, cluck] = 'cow horse sheep pig chicken'.split(' ')
+
 const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
+const [red, orange, yellow, green, blue, indigo, violet] = [...colors]
+const colorArray =  [red, orange, yellow, green, blue, indigo, violet]
+const [r, o, y, g, b,i, v] = [...colorArray]
+const [,,,,,indg,,] = [...colorArray]
 
 const muppet = {
   name: 'Kermit',
@@ -9,6 +15,8 @@ const muppet = {
   job: 'Host of The Muppet Show',
   partner: 'Miss Piggy'
 };
+
+const {name, color, song, job, partner} = muppet
 
 const k_muppet = {
   k_name: 'Kermit',
@@ -25,13 +33,15 @@ const k_muppet = {
   k_partner: 'Miss Piggy'
 };
 
-// Strings
+const {song_2, song_4} = k_muppet.k_album.the_muppet_movie; 
+const {k_job, k_partner} = k_muppet; 
 
-// 1. Use destructuring to assign appropriate variables based on the sounds animals make.
 
-// 2. Bolt the horse wandered off, so just give us four animals, and let's name them Bessie, Dolly, Babe, and Little.
 
-// 3. Little the chicken had to go back to the coop, so now we're left with three. Let's use color variables of black_and_white, black, and pink.
+const [Bessie, ,Dolly, Babe, Little] = 'cow horse sheep pig chicken'.split(' ')
+
+
+const [black_and_white, ,black, pink,] = 'cow horse sheep pig chicken'.split(' ') 
 
 // Arrays
 
